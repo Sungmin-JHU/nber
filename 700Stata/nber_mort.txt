@@ -1,0 +1,34 @@
+<<dd_version: 2>>
+<<dd_include: header.txt>>
+
+Increasing Access to United States Infant Mortality Data via a User-friendly Stata Program
+=================================
+**Origination:**Homage from Patrick Donahue's Github https://pdona17.github.io/class700/intro.html
+
+Sungmin Park, MD(KM)
+
+Johns Hopkins Bloomberg School of Public Health
+
+**Background:**
+Stata is a useful statistical software package that can perform many types of analyses. However, Stata is lacking in the ability to push content to the internet when compared to other programs, such as R or Python. Additionally, the National Bureau of Economic Research (NBER) is a leading private nonprofit research organization, offers a expansive dataset on infant mortality in the United States. However, many Stata users may find it difficult to access NBER files because of incompatible formats. Therefore, as an initial proof of concept, we have designed a Stata program that can easily access mortality data from 1983-2013 that could be linked with NBER data.
+**Methods:**
+Using Jupyter software, we created a book to demonstrate 1) How to openly publish while using Stata and 2) How our Stata program works to import mortality data from NBER. The code for our Stata program, called "nberlbid" is provided in the last chapter of this book.
+
+
+**Results:**
+The program will import the infant mortality data from the national Bureau of Economic Research for any specified range between the years of 1983 and 2013. For instance, the user may enter 2003 and 2013 and the program will import mortality data from each of the years between 2003 and 2013. Then, the program will construct a line graph to show the trends in mortality over the user-specified time frame.
+
+```
+<<dd_do:nooutput>>
+nberlbid, yearstart(2003) yearend(2013)
+
+<</dd_do>>
+```
+
+<<dd_graph>>
+
+**Conclusions:** 
+We hope that this project will encourage Stata and its users to promote open science, where code and new programs are shared on platforms such as Github. Additionally, we hope that the "nberlbid" program will serve as a preliminary example of how flexible Stata programs can increase access to publicly available datasets, such as NBER.
+
+
+

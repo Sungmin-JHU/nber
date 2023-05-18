@@ -1,0 +1,3 @@
+# Background:
+
+The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to evaluate the health and nutritional status of adults in the United States. We are developing skills that allow us to access publicly available large databases that may be queried to answer fundamental questions about public health. These datasets might exist in formats unfamiliar to Stata users or in sizes that cripple ones workflow. 
